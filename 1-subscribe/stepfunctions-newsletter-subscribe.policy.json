@@ -1,0 +1,18 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Action": "ses:SendTemplatedEmail",
+      "Resource": [
+        "arn:aws:ses:YOUR_REGION:YOUR_ACCOUNT_ID:identity/*",
+        "arn:aws:ses:YOUR_REGION:YOUR_ACCOUNT_ID:template/WelcomeTemplate"
+      ]
+    },
+    {
+      "Effect": "Allow",
+      "Action": "ses:CreateContact",
+      "Resource": "arn:aws:ses:YOUR_REGION:YOUR_ACCOUNT_ID:contact-list/EmailNewsletter"
+    }
+  ]
+}

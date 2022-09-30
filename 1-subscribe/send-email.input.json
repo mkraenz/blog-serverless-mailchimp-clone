@@ -1,0 +1,13 @@
+{
+  "FromEmailAddress": "YOUR_SENDER_EMAIL_ADDRESS",
+  "Destination": {
+    "ToAddresses": ["YOUR_DESTINATION_EMAIL_ADDRESS"]
+  },
+  "Content": {
+    "Template": {
+      "TemplateName": "WelcomeTemplate",
+      "TemplateArn": "arn:aws:ses:YOUR_REGION:YOUR_ACCOUNT_ID:template/WelcomeTemplate",
+      "TemplateData": "{\"email\":\"YOUR_DESTINATION_EMAIL_ADDRESS\"}"
+    }
+  }
+}
